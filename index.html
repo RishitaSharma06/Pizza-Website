@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Palace</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Pizza Palace</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header class="section d-flex align-items-center">
+    <div class="container text-center text-white">
+        <h1 class="display-3 fw-bold" style="color: black;">Fresh. Hot. Delicious.</h1>
+        <p class="lead" style="color: black;">Order the best pizza in town!</p>
+        <a href="#menu" class="btn btn-warning btn-lg">Order Now</a>
+    </div>
+</header>
+<section id="menu" class="py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-4">Our Menu</h2>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./pictures/pizza1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Margherita Pizza</h5>
+                        <p class="card-text">Classic cheese & tomato delight.</p>
+                        <button class="btn btn-danger" onclick="addToCart('Margherita Pizza')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./pictures/pizza2.jpg" class="card-img-top" style="background-size: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Veg Loaded Pizza</h5>
+                        <p class="card-text">Loaded with exotic veggies.</p>
+                        <button class="btn btn-danger" onclick="addToCart('Veg Loaded Pizza')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./pictures/pizza3.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Bell Pepper Pizza</h5>
+                        <p class="card-text">Bell Pepper & spicy toppings.</p>
+                        <button class="btn btn-danger" onclick="addToCart('Paneer Special Pizza')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-4">About Us</h2>
+
+        <p class="text-center lead fs-4">
+            Pizza Palace serves fresh oven-baked pizzas made with love.
+            We use premium quality cheese, hand-tossed dough and authentic Italian sauces.
+        </p>
+    </div>
+</section>
+
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-4">Contact Us</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form class="p-4 shadow">
+                    <input type="text" class="form-control mb-3" placeholder="Your Name">
+                    <input type="email" class="form-control mb-3" placeholder="Email">
+                    <textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
+                    <button class="btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="pizza-footer">
+    <div class="container text-center">
+
+
+        <div class="row py-5 align-items-center">
+
+
+            <div class="col-md-4 mb-4">
+                <h5 class="footer-title">ADDRESS</h5>
+                <p class="footer-text">
+                    570 8th Ave<br>
+                    10018 India
+                </p>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <img src="./pictures/logo.png"
+                     class="footer-logo" alt="logo">
+                <h4 class="footer-brand mt-2">GET PIZZA</h4>
+                <p class="footer-text">
+                    Dogfood och Sliders foodtruck.<br>
+                
+                </p>
+                <p class="footer-phone">0123456987</p>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5 class="footer-title">OPENING HOURS</h5>
+                <p class="footer-text">
+                    Monday – Friday <br>
+                    10.00 AM – 11.00 PM
+                </p>
+            </div>
+
+        </div>
+
+        <hr>
+        <div class="footer-links py-3">
+            <a href="#">SHOP</a>
+            <a href="#">CONTACT</a>
+            <a href="#">MENU</a>
+            <a href="#">SHOP</a>
+            <a href="#">CONTACT</a>
+        </div>
+
+        <hr>
+
+        <p class="footer-copy">
+            © Get Pizza All Rights Reserved. Designed By 
+            <span class="designer">Pizza Palace</span>
+        </p>
+
+        <div class="footer-social pb-4">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<script>
+    function addToCart(item) {
+    alert(item + " added to cart!");
+}
+</script>
+</body>
+</html>
